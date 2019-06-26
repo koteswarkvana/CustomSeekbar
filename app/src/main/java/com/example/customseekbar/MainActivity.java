@@ -20,19 +20,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private LinearLayout lvSecondCircleSelect;
     private LinearLayout lvThirdCircleSelect;
     private LinearLayout ll_default;
-private TextView tv_low;
-private TextView tv_medium;
-private TextView tv_high;
+    private TextView tv_low;
+    private TextView tv_medium;
+    private TextView tv_high;
 
-    private void init(){
-        ll_default=findViewById(R.id.ll_default);
-        tv_low=findViewById(R.id.tv_low);
-        tv_medium=findViewById(R.id.tv_medium);
-        tv_high=findViewById(R.id.tv_high);
+    private void init() {
+        ll_default = findViewById(R.id.ll_default);
+        tv_low = findViewById(R.id.tv_low);
+        tv_medium = findViewById(R.id.tv_medium);
+        tv_high = findViewById(R.id.tv_high);
 
-        lvFirstCircleSelect=findViewById(R.id.ll_first_item);
-        lvSecondCircleSelect=findViewById(R.id.ll_second_item);
-        lvThirdCircleSelect=findViewById(R.id.ll_third_item);
+        lvFirstCircleSelect = findViewById(R.id.ll_first_item);
+        lvSecondCircleSelect = findViewById(R.id.ll_second_item);
+        lvThirdCircleSelect = findViewById(R.id.ll_third_item);
 
         lvFirstCircleSelect.setOnClickListener(this);
         lvSecondCircleSelect.setOnClickListener(this);
@@ -45,7 +45,7 @@ private TextView tv_high;
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.ll_first_item:
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                     ll_default.setBackground(getResources().getDrawable(R.drawable.ic_group_select_one));

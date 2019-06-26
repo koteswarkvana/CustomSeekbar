@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<level-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:drawable="@drawable/ic_group_select_one"
         android:maxLevel="0" />
     <item
         android:drawable="@drawable/ic_group_select_two"
         android:maxLevel="1" />
-</level-list>
-<!--
+</level-list><!--
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/selectedIcon">
