@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- <SeekBar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/seekBar3"
+         android:layout_marginTop="30dp"
+         android:max="2"
+         style="@style/Widget.AppCompat.SeekBar.Discrete"
+         android:tickMark="@drawable/circle"
+         android:progressDrawable="@drawable/custom_seekbar_progress"
+         android:thumb="@drawable/button" />-->
+
+    <SeekBar
+        android:id="@+id/sb_level_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:max="2"
+        android:progressDrawable="@drawable/custom_seekbar_progress_sample"
+        android:thumb="@drawable/button"
+        android:tickMark="@drawable/circle"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:weightSum="1">
+            <ImageView
+                android:id="@+id/iv_first_circle"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/button"
+                />
+            <TextView
+                android:id="@+id/tv_first_line"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tint_unselect"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:weightSum="1">
+            <ImageView
+                android:id="@+id/iv_second_circle"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle"
+                />
+            <TextView
+                android:id="@+id/tv_second_line"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tint_unselect"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33" android:weightSum="1">
+            <ImageView
+                android:id="@+id/iv_third_circle"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
